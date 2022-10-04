@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Book An Appointment</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" type="text/css" href="appointment.css"/>
+  </head>
+
+  <body>
+    <h1>Book An Appointment</h1>
+    <div id="container">
+      <!--This is a division tag for body container-->
+      <div id="body_header">
+        <!--This is a division tag for body header-->
+
+        <p>Make your appointments more easier</p>
+
+      </div>
+      <form action="index.html" method="post">
+        <fieldset>
+          <legend><span class="number">1</span>Your basic details</legend>
+          <label for="name">Name*:</label>
+          <input type="text" id="name" name="user_name" placeholder="Ravi (only first names)" required pattern="[a-zA-Z0-9]+">
+
+          <label for="mail">Email*:</label>
+          <input type="email" id="mail" name="user_email" placeholder="abc@xyz.com" required>
+
+          <label for="tel">Contact Number:</label>
+          <input type="tel" id="tel" placeholder="Include country code" name="user_num">
+
+          <!-- <label for="skype_name">Skype username:</label>
+        <input type="text" id="skype_name" name="skype_name" placeholder="@atchyutn" pattern="[a-zA-Z0-9]+"> -->
+
+
+        </fieldset>
+
+        <fieldset>
+          <legend><span class="number">2</span>Appointment Details</legend>
+          <!-- <label for="appointment_for">Appointment for*:</label>
+        <select id="appointment_for" name="appointment_for" required>
+          <option value="coffee">Coffee</option>
+          <option value="meeting">Meeting</option>
+          <option value="Business">Business</option>
+          <option value="lunch">Lunch</option> -->
+          <!-- <option value="skype">Skype</option> -->
+          <!-- <option value="movie">Movie</option>
+          <option value="couple_date">Date</option> -->
+          <!-- </select> -->
+
+          <label for="appointment_description">Appointment Description:</label>
+          <textarea id="appointment_description" name="appointment_description" placeholder="I wish to get an appointment to skype for resolving  problem."></textarea>
+          <label for="date">Date*:</label>
+          <input type="date" name="date" value="" required></input>
+          <br>
+          <label for="time">Time*:</label>
+          <input type="time" name="time" value="" required></input>
+          <br>
+          <label for="duration">How Long??(Minutes)</label>
+          <input type="radio" name="duration" value="30" checked> 30
+          <input type="radio" name="duration" value="60"> 60
+          <input type="radio" name="duration" value="90"> 90
+          <input type="radio" name="duration" value="more"> more
+        </fieldset>
+        <h2>Personal information</h2>
+        <label for="email">Email:</label>
+
+        <input type="email" id="email" pattern=".+@globex\.com" size="30" required>
+
+        <div class="app-name">
+          <label for="username">Name:</label>
+          <input type="username" id="name" pattern=".+Rahul" size="30" required>
+        </div>
+
+        <div class="app-number">
+          <label for="number">Number:</label>
+          <input type="username" id="number" pattern="123456789" size="30" required>
+        </div>
+        <div class="">
+
+
+        <label for="number">Description:</label>
+        <br>
+        <textarea rows="5" cols="36" name="comment" form="usrform">Enter text here...</textarea>
+        </div>
+
+        <div class="appointment-button">
+          <button type="submit">Submit</button>
+        </div>
+
+    </div>
+  </body>
+
+</html>
